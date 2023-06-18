@@ -2,6 +2,7 @@ import Cart from "./components/cart/Cart";
 import Header from "./components/layout/Header";
 import Meals from "./components/meals/Meals";
 import { useState } from 'react'
+import CartProvider from "./store/CartProvider";
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   }
 
   return (
-    <>
+    <CartProvider>
       {cartIsShown &&
         <Cart
           onCartDisabale={cartDisabaleHandler}
@@ -28,7 +29,7 @@ function App() {
       <main>
         <Meals />
       </main>
-    </>
+    </CartProvider>
   );
 }
 
