@@ -10,7 +10,7 @@ const Header = (props) => {
       <header className={classes.header}>
         <h1>ChopStic</h1>
         <HeaderCardButton
-        onCartShown={props.onCartShown}
+          onCartShown={props.onCartShown}
         />
       </header>
       <div className={classes['main-image']}>

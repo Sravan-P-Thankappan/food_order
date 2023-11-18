@@ -19,7 +19,7 @@ function App() {
   return (
     <CartProvider>
       {cartIsShown &&
-        <Cart
+        <Cart 
           onCartDisabale={cartDisabaleHandler}
         />
       }
@@ -27,7 +27,7 @@ function App() {
         onCartShown={showCartHandler}
       />
       <main>
-        <Meals />
+        <Meals />               
       </main>
     </CartProvider>
   );
